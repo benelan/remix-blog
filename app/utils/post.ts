@@ -13,7 +13,7 @@ export type PostMarkdownAttributes = {
   title: string;
 };
 
-const postsPath = path.resolve("posts");
+const postsPath = path.resolve(process.cwd(), "posts")
 
 function isValidPostAttributes(
   attributes: any
