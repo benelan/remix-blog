@@ -3,18 +3,17 @@
 @tailwind utilities;
 
 .wrapper {
-  --beige: #eee;
-  --primary: #3A7563;
-  --secondary: #A7C4BC;
-  --background: var(--beige);
-  --text: #000;
+  --ui-primary: #3A7563;
+  --ui-secondary: #A7C4BC;
+  --ui-background: #eeeeee;
+  --ui-type: #100c08;
 }
 
 .wrapper.dark {
-  --primary: #3A7563;
-  --secondary: #303E27;
-  --background: #212125;
-  --text: var(--beige);
+  --ui-primary: #3A7563;
+  --ui-secondary: #303E27;
+  --ui-background: #212125;
+  --ui-type: #eeeeee;
 }
 
 html {
