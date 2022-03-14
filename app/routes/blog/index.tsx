@@ -1,4 +1,3 @@
-
 import { Link, useLoaderData, MetaFunction } from "remix";
 
 import { getPosts } from "~/utils/post";
@@ -20,15 +19,16 @@ export const meta: MetaFunction = () => ({
 export default function Blog() {
   const posts = useLoaderData<Post[]>();
   return (
-    <main>
-      <h1>Posts</h1>
-      <ul>
-        {posts.map((post) => (
-          <li key={post.slug}>
-            <Link to={post.slug}>{post.title}</Link>
-          </li>
-        ))}
-      </ul>
-    </main>
+    <div className="flex justify-evenly flex-wrap">
+      {posts.map((post) => (
+        <Link key={post.slug} to={post.slug} className="m-5">
+          <div className="h-full max-w-md bg-white shadow-lg rounded-lg">
+            <h2 className="text-gray-800 text-2xl font-semibold p-3">
+              {post.title}
+            </h2>
+          </div>
+        </Link>
+      ))}
+    </div>
   );
 }

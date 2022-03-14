@@ -12,6 +12,11 @@ const TopNav = ({ theme }: TopNavProps) => {
     return (
       <>
         <li>
+          <NavLink to="/" className={routeStyle}>
+            Home
+          </NavLink>
+        </li>
+        <li>
           <NavLink to="/blog" className={routeStyle}>
             Blog
           </NavLink>
@@ -26,7 +31,7 @@ const TopNav = ({ theme }: TopNavProps) => {
 
   return (
     <>
-      <nav className="fixed bg-secondary text-text h-16 w-full z-50">
+      <nav className="fixed bg-secondary h-16 w-full z-50">
         <div className="flex h-full container mx-auto justify-between items-center px-4 lg:px-16">
           <Link className="logo flex flex-row text-lg lg:text-2xl" to="/">
             <LogoLetter letter="b" />
@@ -68,7 +73,6 @@ const TopNav = ({ theme }: TopNavProps) => {
                     viewBox="0 0 24 24"
                     fill="currentColor"
                     stroke="currentColor"
-                    className="text-text"
                   >
                     <path
                       strokeLinecap="round"
@@ -82,7 +86,6 @@ const TopNav = ({ theme }: TopNavProps) => {
                   <svg
                     fill="currentColor"
                     stroke="currentColor"
-                    className="text-text"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -98,7 +101,7 @@ const TopNav = ({ theme }: TopNavProps) => {
           </form>
           <ul className="hidden md:flex md:gap-6">{navItems()}</ul>
           <ul
-            className="md:hidden absolute flex flex-col w-full top-16 left-0 py-4 items-center text-white bg-primary transform gap-4"
+            className="md:hidden absolute flex flex-col w-full top-16 left-0 py-4 items-center text-white bg-secondary transform gap-4"
             id="MobileNav"
           >
             {navItems()}
