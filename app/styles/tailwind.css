@@ -1030,6 +1030,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 60%;
 }
 
+.max-w-xs {
+  max-width: 20rem;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
@@ -1411,6 +1415,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:gap-0 {
     gap: 0px;
+  }
+
+  .md\:text-left {
+    text-align: left;
   }
 
   .md\:text-5xl {
