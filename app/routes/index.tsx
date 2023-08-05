@@ -26,10 +26,10 @@ export default function Index() {
         className="relative lg:pt-0 items-center content-center flex"
       >
         <div className="container gap-8 md:gap-0 grid md:grid-cols-2 items-center content-center justify-items-center">
-          <div className="w-3/5 pt-5 max-w-xs">
+          <div className="w-3/5 pt-5">
             <img alt="Profile" src="/img/ben.png" width={500} height={500} />
           </div>
-            <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl text-center md:text-left">
+            <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl text-center :text-left">
               <div>Web developer</div>
               <div>specializing in</div>
               <div className="animate-skill-1">UI/UX</div>

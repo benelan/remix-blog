@@ -5,10 +5,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "var(--ui-primary)",
-        secondary: "var(--ui-secondary)",
-        background: "var(--ui-background)",
-        type: "var(--ui-type)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        background: "var(--background)",
+        text: "var(--text)",
       },
       boxShadow: {
         case: "0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24)",
@@ -20,16 +20,16 @@ module.exports = {
       },
       keyframes: {
         "skill-1": {
-          "0%, 100%": { color: "var(--ui-type)" },
-          "50%": { color: "var(--ui-primary)" },
+          "0%, 100%": { color: "var(--text)" },
+          "50%": { color: "var(--primary)" },
         },
         "skill-2": {
-          "0%, 100%": { color: "var(--ui-type)" },
+          "0%, 100%": { color: "var(--text)" },
           "50%": { color: "orange" },
         },
         "skill-3": {
-          "0%, 100%": { color: "var(--ui-type)" },
-          "50%": { color: "lightblue" },
+          "0%, 100%": { color: "var(--text)" },
+          "50%": { color: "blue" },
         },
       },
       animation: {
